@@ -52,8 +52,8 @@ def banner(console):
     print(Colorate.Horizontal(Colors.rainbow, '============================================================'))
     print(Colorate.Horizontal(Colors.rainbow, '\t         Пожалуйста, войдите в CPM перед использованием этого инструмента'))
     print(Colorate.Horizontal(Colors.rainbow, '    Совместное использование ключа доступа запрещено и будет заблокировано'))
-    print(Colorate.Horizontal(Colors.rainbow, f' ‌               Telegram - Владелец: @{__CHANNEL_USERNAME__}'))
-    print(Colorate.Horizontal(Colors.rainbow, '                 Telegram - Разработик: @ChixNode'))
+    print(Colorate.Horizontal(Colors.rainbow, '                Telegram - Владелец: @Mister_Dlzz'))
+    print(Colorate.Horizontal(Colors.rainbow, '                Telegram - Разработик: @ChixNode'))
     print(Colorate.Horizontal(Colors.rainbow, '============================================================'))
 
 
@@ -67,13 +67,13 @@ def load_player_data(cpm):
         
             print(Colorate.Horizontal(Colors.rainbow, '==========[ ИНФОРМАЦИЯ ОБ ИГРОКЕ ]=========='))
             
-            print(Colorate.Horizontal(Colors.rainbow, f'Name   : {(data.get("Name") if "Name" in data else "UNDEFINED")}.'))
+            print(Colorate.Horizontal(Colors.rainbow, f'Ник   : {(data.get("Name") if "Name" in data else "UNDEFINED")}.'))
                 
             print(Colorate.Horizontal(Colors.rainbow, f'LocalID: {data.get("localID")}.'))
             
-            print(Colorate.Horizontal(Colors.rainbow, f'Money  : {data.get("money")}.'))
+            print(Colorate.Horizontal(Colors.rainbow, f'Деньги  : {data.get("money")}.'))
             
-            print(Colorate.Horizontal(Colors.rainbow, f'Coins  : {data.get("coin")}.'))
+            print(Colorate.Horizontal(Colors.rainbow, f'Монет  : {data.get("coin")}.'))
             
         else:
             print(Colorate.Horizontal(Colors.rainbow, '! ERROR: новые учетные записи должны быть зарегистрированы в игре хотя бы один раз!.'))
@@ -89,11 +89,11 @@ def load_key_data(cpm):
 
     print(Colorate.Horizontal(Colors.rainbow, '========[ ИНФОРМАЦИЯ О КЛЮЧЕ ]========'))
     
-    print(Colorate.Horizontal(Colors.rainbow, f'Access Key : {data.get("access_key")}.'))
+    print(Colorate.Horizontal(Colors.rainbow, f'Ключ : {data.get("access_key")}.'))
     
-    print(Colorate.Horizontal(Colors.rainbow, f'Telegram ID: {data.get("telegram_id")}.'))
+    print(Colorate.Horizontal(Colors.rainbow, f'Телеграмм ID: {data.get("telegram_id")}.'))
     
-    print(Colorate.Horizontal(Colors.rainbow, f'Balance $  : {(data.get("coins") if not data.get("is_unlimited") else "Unlimited")}.'))
+    print(Colorate.Horizontal(Colors.rainbow, f'Баланс $  : {(data.get("coins") if not data.get("is_unlimited") else "Unlimited")}.'))
 
 
 def prompt_valid_value(content, tag, password=False):
